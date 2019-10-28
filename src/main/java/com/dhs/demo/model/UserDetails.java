@@ -14,7 +14,7 @@ public class UserDetails {
 	@Field("_id")
 	private String id;
 	private String name;
-	private int age;
-	private int phone;
+	private String age;
+	private String phone;
 
 }
