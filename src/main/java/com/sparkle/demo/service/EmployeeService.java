@@ -1,4 +1,4 @@
-package com.dhs.demo.service;
+package com.sparkle.demo.service;
 
 import java.util.Date;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.dhs.demo.dao.EmployeeRepository;
-import com.dhs.demo.model.Employee;
+import com.sparkle.demo.dao.EmployeeRepository;
+import com.sparkle.demo.model.Employee;
 
 @Service
 public class EmployeeService {

@@ -1,10 +1,10 @@
-package com.dhs.demo.dao;
+package com.sparkle.demo.dao;
 
 import java.util.Optional;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import com.dhs.demo.model.Employee;
+import com.sparkle.demo.model.Employee;
 
 public interface EmployeeRepository extends MongoRepository<Employee, String>{
 	

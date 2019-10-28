@@ -1,4 +1,4 @@
-package com.dhs.demo.model;
+package com.sparkle.demo.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

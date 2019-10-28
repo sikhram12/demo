@@ -1,12 +1,12 @@
-package com.dhs.demo.service;
+package com.sparkle.demo.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.dhs.demo.dao.UserDetailsRepository;
-import com.dhs.demo.model.UserDetails;
+import com.sparkle.demo.dao.UserDetailsRepository;
+import com.sparkle.demo.model.UserDetails;
 
 @Service
 public class UserDetailsService {

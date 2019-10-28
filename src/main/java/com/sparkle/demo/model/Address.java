@@ -1,4 +1,4 @@
-package com.dhs.demo.model;
+package com.sparkle.demo.model;
 
 import lombok.Data;
 
