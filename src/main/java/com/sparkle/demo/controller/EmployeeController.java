@@ -1,6 +1,7 @@
 package com.sparkle.demo.controller;
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.sparkle.demo.model.Employee;
+import com.sparkle.demo.model.UsaCities;
 import com.sparkle.demo.service.EmployeeService;
 
 @CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
@@ -45,5 +47,15 @@ public class EmployeeController {
 	@GetMapping("/test")
 	public String test(){
 		return "Sucess";
+	}
+	
+	@GetMapping("/allCities")
+	public List<UsaCities> fetchAllUsaCities(){
+		return employeeService.fetchAllUsaCities();
+	}
+	
+	@GetMapping("/stateWithCities")
+	public Map<String, Map<String, String>> stateWithCities(){
+		return employeeService.stateWithCities();
 	}
 }
