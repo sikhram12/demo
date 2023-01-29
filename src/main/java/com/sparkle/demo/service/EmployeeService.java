@@ -54,11 +54,11 @@ public class EmployeeService {
 			if (map.get(arg0.getState_name()) != null) {
 				//Map<String, String> cities = new HashMap<>();
 				//cities.put(arg0.getCity(), arg0.getZips());
-				map.get(arg0.getState_name()).put(arg0.getCity(), arg0.getZips());
+				map.get(arg0.getState_name()).put(arg0.getCity(), arg0.getZipcode());
 			//map.put(arg0.getState_name(), cities);
 			}else {
 				Map<String, String> cities = new HashMap<>();
-				cities.put(arg0.getCity(), arg0.getZips());
+				cities.put(arg0.getCity(), arg0.getZipcode());
 				map.put(arg0.getState_name(), cities);
 			}
 		});

@@ -15,7 +15,7 @@ public class UsaCities {
 	private String city;
 	private String state_id;
 	private String state_name;
-	private String zips;
+	private String zipcode;
 	
 }
 
