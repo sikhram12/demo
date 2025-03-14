@@ -19,7 +19,8 @@ public class Employee {
 	private String lastName;
 	private int age;
 	private String experience;
-	private long phone;
+	private String skill;
+	private String phone;
 	private String streetAdress;
 	private String city;
 	private String state;

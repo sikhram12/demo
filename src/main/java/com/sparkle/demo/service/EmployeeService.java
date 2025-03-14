@@ -3,6 +3,7 @@ package com.sparkle.demo.service;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,8 +22,8 @@ public class EmployeeService {
 	@Autowired
 	UsaCitiesRepository usaCitiesRepository;
 	
-	public Employee createEmployee(Employee employee){
-		Employee savedEmployeeObj = employeeRepository.save(employee);
+	public List<Employee>  createEmployee(List<Employee>  employee){
+		List<Employee>  savedEmployeeObj = employeeRepository.saveAll(employee);
 		return savedEmployeeObj;
 		
 	}
@@ -40,6 +41,17 @@ public class EmployeeService {
 	public String deleteEmployee(String id) {
 		employeeRepository.deleteById(id);
 		return "Employee Details Sucessfully deleted";
+	}
+	
+	//Created a getEmployee method for search
+	public Optional<Employee> getEmployee(String firstName) {
+		Optional<Employee> employeeListOnFirstName= employeeRepository.findByFirstName(firstName); 
+		return employeeListOnFirstName;
+	}
+	
+	//Created a getEmployeeByLastName method for search
+	public List<Employee> getEmployeeByLastName(String LastName){
+		return employeeRepository.findByLastName(LastName);
 	}
 
 	public List<UsaCities> fetchAllUsaCities() {
